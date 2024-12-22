@@ -1,0 +1,50 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(45deg, #1e272e, #34495e);
+    overflow: hidden;
+}
+
+.animation-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.animated-svg {
+    position: absolute;
+    width: 30%;
+    height: auto;
+    animation: float 6s infinite ease-in-out;
+}
+
+#dragon {
+    top: 5%;
+    left: 15%;
+    animation-delay: 0s;
+}
+
+#phoenix {
+    top: 35%;
+    left: 45%;
+    animation-delay: 2s;
+}
+
+#unicorn {
+    top: 65%;
+    left: 75%;
+    animation-delay: 4s;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-40px);
+    }
+}

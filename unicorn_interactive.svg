@@ -1,0 +1,15 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+    <path d="M200 700 Q300 600 400 700 T600 700 Q700 600 800 700"
+          fill="none" stroke="#6c5ce7" stroke-width="4">
+        <animate attributeName="stroke-dasharray" from="0,1500" to="1500,0" dur="6s" repeatCount="indefinite"/>
+    </path>
+    <circle cx="200" cy="700" r="20" fill="#6c5ce7">
+        <animate attributeName="cx" from="200" to="800" dur="6s" repeatCount="indefinite"/>
+        <animate attributeName="cy" from="700" to="700" dur="6s" repeatCount="indefinite"/>
+    </circle>
+    <text x="700" y="100" fill="#6c5ce7" font-size="18" font-family="Arial" opacity="0.8">
+        <animate attributeName="opacity" values="0;1;0" dur="7s" repeatCount="indefinite" />
+        Unicorn Whisper
+    </text>
+</svg>
